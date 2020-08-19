@@ -2,8 +2,8 @@ showDebugMsg("loading up listeners");
 
 const sentinelsProductID = "com.earthoracles.celtmistic.premium_sentinels";
 
+// window.addEventListener('load', debugDeviceReady, false); // for debugging in browser
 document.addEventListener('deviceready', phoneDeviceReady);
-window.addEventListener('load', debugDeviceReady, false); // for debugging in browser
 
 function debugDeviceReady() {
     showDebugMsg("onLoad was triggered");

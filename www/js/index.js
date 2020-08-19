@@ -20,11 +20,17 @@ function onDeviceReady() {
         showDebugMsg("Store is undefined")
         return;
     }
+    showDebugMsg("Store is defined")
+    store.verbosity = store.DEBUG;
+
     store.when(sentinelsProductID)
         .updated(refreshUI)
         .approved(finishPurchase);
     store.register({type: store.NON_CONSUMABLE, id: sentinelsProductID});
     store.refresh();
+    store.error(function (e){
+        showDebugMsg("Store Error: " + e.code + ": " + e.message);
+    })
 }
 
 function finishPurchase(p) {
@@ -33,7 +39,7 @@ function finishPurchase(p) {
 }
 
 function refreshUI() {
-    const product = store.get('cc.fovea.purchase.consumable1');
+    const product = store.get('sentinelsProductID');
     const button = `<button onclick="store.order(sentinelsProductID)">Purchase</button>`;
 
     document.getElementById('display').innerHTML = `
@@ -42,9 +48,10 @@ function refreshUI() {
   Gold: ${localStorage.goldCoins | 0}
 
   Product.state: ${product.state}
-  .title: ${product.title}
-  .descr: ${product.description}
-  .price: ${product.price}
+  Product.title: ${product.title}
+  Product.descr: ${product.description}
+  Product.price: ${product.price}
+  Product.canPurchase: ${product.canPurchase}
 
   </pre>
   ${product.canPurchase ? button : ''}

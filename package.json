@@ -12,6 +12,9 @@
     "dependencies": {
         "cc.fovea.cordova.purchase": "^7.4.1",
         "cordova-android": "^7.1.4",
+        "cordova-browser": "^6.0.0",
+        "cordova-plugin-network-information": "2.0.2",
+        "cordova-plugin-purchase": "10.2.0",
         "cordova-plugin-whitelist": "^1.3.3"
     },
     "cordova": {
@@ -19,10 +22,15 @@
             "cordova-plugin-whitelist": {},
             "cc.fovea.cordova.purchase": {
                 "BILLING_KEY": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuJQh6jlNr6SlF3p+I2zGBZdDbCGCTUj8ubZLSks9zYp3BI3lnvj6/MRBAUZQFmLCmrw6dQl/qh8IX3k4mtVPtXZUSx9DTLge0hdBWkcOCuYGcWdvM6PKNigdT1BC3SFjeVgWFZMSpOfmaoZ1a9eA2bONeqDKeCbhLnmgyOUlRSolfw/Tgk+SFpSv26hR3EbHSC4W7Q5NtK5fq/7/MLoYpXiKrz9X4ZOa654aoZ3JSmy8XFKj9nYZKElM6tsHkXV9lecUe7yY+ieEdaliZryh50ZTUdT9GY0lDlYn89rbmC5dWJaORzQ97pu8huFQu6xyp/+LEYvieXkCSiFIYF4uIwIDAQAB"
+            },
+            "cordova-plugin-network-information": {},
+            "cordova-plugin-purchase": {
+                "BILLING_KEY": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAgNmcY5COl+lWncq9hUUNVm8JBtDxsnFGA7Z9sPJwnsd3knBtmXj02CA2m87SZUtADRlHqoeXIXfU37ELqpbC0YuuB+f58gXAaOmQD889pct4T/duuDDLVk8kfm11XlTs/McbC2lGskhPkvLPdsZvbLcPFVkaAfKS4Omk05X/jqUhAzDhM9XTQPPbceCQCjPdOE8EHLN35dPQTwS4wrcyFxIqINOoWcCewniJX5203nEW3N1/6AgCTRWmkZ9F8HK+PdguM3SDuOWHILgeAM5MNw30r2316fDgBFkpNYam/cNvYprLmsg7xOG4ylE46zSAdvr/5HWPG5bmCpyWqKc5qwIDAQAB"
             }
         },
         "platforms": [
-            "android"
+            "android",
+            "browser"
         ]
     }
 }

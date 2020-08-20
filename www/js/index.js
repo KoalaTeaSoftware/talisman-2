@@ -28,7 +28,7 @@ function onDeviceReady() {
         .approved(finishPurchase);
     store.register({type: store.NON_CONSUMABLE, id: sentinelsProductID});
     store.refresh();
-    store.error(function (e){
+    store.error(function (e) {
         showDebugMsg("Store Error: " + e.code + ": " + e.message);
     })
 }

@@ -39,6 +39,7 @@ function finishPurchase(p) {
 }
 
 function refreshUI() {
+    showDebugMsg("Refreshing the UI");
     const product = store.get('sentinelsProductID');
     const button = `<button onclick="store.order(sentinelsProductID)">Purchase</button>`;
 

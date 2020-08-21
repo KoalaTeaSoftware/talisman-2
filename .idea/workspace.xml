@@ -48,7 +48,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597923932968</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="roll android engine forwards to 8 to seee if that fixes the compile problem">
+      <created>1597997277756</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1597997277756</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -58,17 +65,18 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="rebuild of a very basic app" />
-    <option name="LAST_COMMIT_MESSAGE" value="rebuild of a very basic app" />
+    <MESSAGE value="roll android engine forwards to 8 to seee if that fixes the compile problem" />
+    <option name="LAST_COMMIT_MESSAGE" value="roll android engine forwards to 8 to seee if that fixes the compile problem" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="425" y="16" width="1070" height="827" key="CommitChangelistDialog2" timestamp="1597923931843">
+    <state x="425" y="16" width="1070" height="827" key="CommitChangelistDialog2" timestamp="1597997276601">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="425" y="16" width="1070" height="827" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1597923931843" />
-    <state x="92" y="92" width="1416" height="676" key="DiffContextDialog" timestamp="1597923900937">
+    <state x="425" y="16" width="1070" height="827" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1597997276601" />
+    <state x="92" y="92" width="1416" height="676" key="DiffContextDialog" timestamp="1597997477472">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="92" y="92" width="1416" height="676" key="DiffContextDialog/0.0.1600.860@0.0.1600.860" timestamp="1597923900937" />
+    <state x="92" y="92" width="1416" height="676" key="DiffContextDialog/0.0.1600.860@0.0.1600.860" timestamp="1597997477472" />
     <state width="1557" height="222" key="GridCell.Tab.0.bottom" timestamp="1597826889327">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -85,9 +93,9 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="1557" height="222" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1597826889327" />
-    <state x="392" y="162" key="Vcs.Push.Dialog.v2" timestamp="1597923935347">
+    <state x="392" y="162" key="Vcs.Push.Dialog.v2" timestamp="1597997280421">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="392" y="162" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1597923935347" />
+    <state x="392" y="162" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1597997280421" />
   </component>
 </project>

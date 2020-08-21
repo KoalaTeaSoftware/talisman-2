@@ -25,11 +25,11 @@ function onDeviceReady() {
 
     store.when(sentinelsProductID)
         .updated(function (prod) {
-            showDebugMsg("Store Update Triggered for:" + JSON.stringify(prod, null, 2) + ":")
+            showDebugMsg("Store Update Triggered for:<pre>" + JSON.stringify(prod, null, 2) + "</pre>:")
             refreshUI();
         })
         .approved(function (prod) {
-            showDebugMsg("Store Approved Triggered:" + JSON.stringify(prod, null, 2) + ":")
+            showDebugMsg("Store Approved Triggered:<pre>" + JSON.stringify(prod, null, 2) + "</pre>:")
             finishPurchase();
         });
 
@@ -52,7 +52,7 @@ function refreshUI() {
         showDebugMsg("Unable to get the product's details")
         return;
     }
-    showDebugMsg("Product is" + JSON.stringify(product, null, 2) + ":")
+    showDebugMsg("Product is<pre>" + JSON.stringify(product, null, 2) + "</pre>:")
 
     const button = `<button onclick="store.order(sentinelsProductID)">Purchase</button>`;
 

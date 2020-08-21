@@ -5,10 +5,10 @@ const sentinelsProductID = "com.earthoracles.celtmistic.premium_sentinels";
 // window.addEventListener('load', debugDeviceReady, false); // for debugging in browser
 document.addEventListener('deviceready', phoneDeviceReady);
 
-function debugDeviceReady() {
-    showDebugMsg("onLoad was triggered");
-    onDeviceReady();
-}
+// function debugDeviceReady() {
+//     showDebugMsg("onLoad was triggered");
+//     onDeviceReady();
+// }
 
 function phoneDeviceReady() {
     showDebugMsg("deviceReady was triggered");
@@ -25,11 +25,11 @@ function onDeviceReady() {
 
     store.when(sentinelsProductID)
         .updated(function (prod) {
-            showDebugMsg("Store Update Triggered for:" + prod.title + ":")
+            showDebugMsg("Store Update Triggered for:" + JSON.stringify(prod, null, 2) + ":")
             refreshUI();
         })
         .approved(function (prod) {
-            showDebugMsg("Store Approved Triggered:" + prod.title + ":")
+            showDebugMsg("Store Approved Triggered:" + JSON.stringify(prod, null, 2) + ":")
             finishPurchase();
         });
 
@@ -48,11 +48,11 @@ function finishPurchase(p) {
 function refreshUI() {
     showDebugMsg("Refreshing the UI");
     const product = store.get(sentinelsProductID);
-    if(!product) {
+    if (!product) {
         showDebugMsg("Unable to get the product's details")
-        return ;
+        return;
     }
-    showDebugMsg(JSON.stringify(product))
+    showDebugMsg("Product is" + JSON.stringify(product, null, 2) + ":")
 
     const button = `<button onclick="store.order(sentinelsProductID)">Purchase</button>`;
 

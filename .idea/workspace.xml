@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d45bf174-1ac4-4bdd-a973-f6b8dfffbc44" name="Default Changelist" comment="" />
+    <list default="true" id="d45bf174-1ac4-4bdd-a973-f6b8dfffbc44" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,24 +57,42 @@
       <option name="project" value="LOCAL" />
       <updated>1597997277756</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="roll android engine back to the original value and dial down the version of the IAP plugin to the one mentioned as the latest (rather than the value placed in package.json)">
+      <created>1597997886629</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1597997886629</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="rebuild of a very basic app" />
     <MESSAGE value="roll android engine forwards to 8 to seee if that fixes the compile problem" />
-    <option name="LAST_COMMIT_MESSAGE" value="roll android engine forwards to 8 to seee if that fixes the compile problem" />
+    <MESSAGE value="roll android engine back to the original value and dial down the version of the IAP plugin to the one mentioned as the latest (rather than the value placed in package.json)" />
+    <option name="LAST_COMMIT_MESSAGE" value="roll android engine back to the original value and dial down the version of the IAP plugin to the one mentioned as the latest (rather than the value placed in package.json)" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="425" y="16" width="1070" height="827" key="CommitChangelistDialog2" timestamp="1597997276601">
+    <state x="425" y="16" width="1070" height="827" key="CommitChangelistDialog2" timestamp="1597997885416">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="425" y="16" width="1070" height="827" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1597997276601" />
+    <state x="425" y="16" width="1070" height="827" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1597997885416" />
     <state x="92" y="92" width="1416" height="676" key="DiffContextDialog" timestamp="1597997477472">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -93,9 +113,13 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="1557" height="222" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1597826889327" />
-    <state x="392" y="162" key="Vcs.Push.Dialog.v2" timestamp="1597997280421">
+    <state x="611" y="150" key="RollbackChangesDialog" timestamp="1597997678128">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="392" y="162" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1597997280421" />
+    <state x="611" y="150" key="RollbackChangesDialog/0.0.1600.860@0.0.1600.860" timestamp="1597997678128" />
+    <state x="392" y="162" key="Vcs.Push.Dialog.v2" timestamp="1597997888810">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="392" y="162" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1597997888810" />
   </component>
 </project>

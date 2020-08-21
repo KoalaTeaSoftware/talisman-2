@@ -8,12 +8,12 @@ document.addEventListener('deviceready', phoneDeviceReady);
 function debugDeviceReady() {
     showDebugMsg("onLoad was triggered");
     onDeviceReady();
-};
+}
 
 function phoneDeviceReady() {
     showDebugMsg("deviceReady was triggered");
     onDeviceReady();
-};
+}
 
 function onDeviceReady() {
     if ((typeof store) === 'undefined') {
@@ -24,8 +24,15 @@ function onDeviceReady() {
     store.verbosity = store.DEBUG;
 
     store.when(sentinelsProductID)
-        .updated(refreshUI)
-        .approved(finishPurchase);
+        .updated(function (prod) {
+            showDebugMsg("Store Update Triggered for:" + prod.title + ":")
+            refreshUI();
+        })
+        .approved(function (prod) {
+            showDebugMsg("Store Approved Triggered:" + prod.title + ":")
+            finishPurchase();
+        });
+
     store.register({type: store.NON_CONSUMABLE, id: sentinelsProductID});
     store.refresh();
     store.error(function (e) {
@@ -40,7 +47,13 @@ function finishPurchase(p) {
 
 function refreshUI() {
     showDebugMsg("Refreshing the UI");
-    const product = store.get('sentinelsProductID');
+    const product = store.get(sentinelsProductID);
+    if(!product) {
+        showDebugMsg("Unable to get the product's details")
+        return ;
+    }
+    showDebugMsg(JSON.stringify(product))
+
     const button = `<button onclick="store.order(sentinelsProductID)">Purchase</button>`;
 
     document.getElementById('display').innerHTML = `
@@ -48,11 +61,11 @@ function refreshUI() {
   <pre>
   Gold: ${localStorage.goldCoins | 0}
 
-  Product.state: ${product.state}
-  Product.title: ${product.title}
-  Product.descr: ${product.description}
-  Product.price: ${product.price}
-  Product.canPurchase: ${product.canPurchase}
+  Product.state: ${product.state | "undefined"}
+  Product.title: ${product.title | "undefined"}
+  Product.descr: ${product.description | "undefined"}
+  Product.price: ${product.price | "undefined"}
+  Product.canPurchase: ${product.canPurchase | "undefined"}
 
   </pre>
   ${product.canPurchase ? button : ''}
